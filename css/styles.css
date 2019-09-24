@@ -5,7 +5,7 @@
   --fondo:#ffff;
   --titulos:33px;
   --margenes:60px;
-  --espacios:10px;
+  --espacios:15px;
   --espacios-contenido:45px;
 }
 
@@ -96,7 +96,7 @@ img {
     rgb(161, 231, 250, 0.5),
     rgb(4, 199, 134, 0.5),
     rgb(76, 44, 218, 0.5)
-    ), url(../img/footer.jpg)
+    ), url(../img/fondo3.jpg)
   }
 
   nav {
@@ -198,14 +198,23 @@ img {
   margin-bottom: var(--espacios-contenido);
 }
 
+.team-contenedor {
+  width: 80%;
+  margin: auto;
+  margin-top: -10%;
+}
+
 .card {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 19px;
   margin-bottom: 30px;
   color: black;
+  width: 100%;
+  height: 600px;
 }
+
 
 .content-card {
   width: 31%;
@@ -216,6 +225,7 @@ img {
 
 .people {
   height: 80%;
+  border: 2px solid #fff;
 }
 .content-card img {
   width: 100%;
@@ -227,7 +237,7 @@ img {
   height: 20%;
   width: 100%;
   padding: var(--espacios) 0;
-}
+ }
 
 .about  {
   background: url(../img/footer.jpg);
@@ -352,12 +362,24 @@ footer p {
   display: block;
 }
 
-.enlaces {
+.enlace {
   position: fixed;
   top: 80px;
   background: #010935;
   left: 0;
   height: 100%;
   transition: 1s;
+  width: 0;
+  overflow: hidden;
 }
+
+.enlace a {
+  display: block;
+  width: 100%;
+  height: 50%;
+  padding:20px;
+  text-align: center;
+  background:rgb(112, 114, 116);
+  color:#fff;
+  }
 }
